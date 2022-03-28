@@ -64,4 +64,14 @@ public class Consulta {
 	public void setPaciente(Paciente paciente) {
 		this.paciente = paciente;
 	}
+	
+	@Override
+	public String toString() {
+		return this.getIdentificadorConsulta() + " - dia " + this.getDia() + 
+				", mês " + this.getMes()
+				+ ", ano " + this.getAno() 
+				+ ", hora " + this.getHoraInteira()
+				+ ". Médico: " + this.getMedico().getNome()
+				+ ", paciente: " + this.getPaciente().getNome();
+	}
 }

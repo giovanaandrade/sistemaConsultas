@@ -65,33 +65,29 @@ public class InterfaceDeUsuario {
 
 			case 4: // verificar consultas
 				for (int i = 0; i < listaConsultas.size(); i++) {
-					System.out.println(listaConsultas.get(i).getIdentificadorConsulta());
-					System.out.println(listaConsultas.get(i).getDia());
-					System.out.println(listaConsultas.get(i).getMes());
-					System.out.println(listaConsultas.get(i).getAno());
-					System.out.println(listaConsultas.get(i).getHoraInteira());
+					System.out.println("Lista de consultas:");
+					System.out.println(listaConsultas.get(i).toString());
 				}
 				break;
 
 			case 5: // consultar pacientes
 				for (int i = 0; i < listaPacientes.size(); i++) {
-					System.out.println(listaPacientes.get(i).getNome());
-					System.out.println(listaPacientes.get(i).getCpf());
-					System.out.println(listaPacientes.get(i).getEndereco());
+					System.out.println("Lista de pacientes:");
+					System.out.println(listaPacientes.get(i).toString());
 
 				}
 				break;
 
 			case 6: // consultar médicos
 				for (int i = 0; i < listaMedicos.size(); i++) {
-					System.out.println(listaMedicos.get(i).getNome());
-					System.out.println(listaMedicos.get(i).getCpf());
-					System.out.println(listaMedicos.get(i).getEspecialidade());
+					System.out.println("Lista de médicos:");
+					System.out.println(listaMedicos.get(i).toString());
 				}
 				break;
 
 			case 7: // consultar especialidades
 				for (int i = 0; i < listaMedicos.size(); i++) {
+					System.out.println("Lista de especialidades:");
 					System.out.println(listaMedicos.get(i).getEspecialidade());
 				}
 				break;
